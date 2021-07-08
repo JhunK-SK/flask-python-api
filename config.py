@@ -8,9 +8,9 @@
 db = {
     'user': 'root',
     'password': 'rlawjdgns',
-    'host': 'flask-python-api.cbch4w72tagg.us-east-1.rds.amazonaws.com',
+    'host': 'localhost',
     'port': 3306,
-    'database': 'flask-python-api',
+    'database': 'miniter',
 }
 
 DB_URL = (
@@ -18,7 +18,8 @@ DB_URL = (
     f"{db['database']}?charset=utf8"
 )
 JWT_SECRET_KEY = 'difficult secret key'
-
+JWT_EXP_DELTA_SECONDS = 7 * 24 * 60 * 60
+UPLOAD_DIRECTORY = './profile_pictures'
 
 test_db = {
     'user': 'root',
